@@ -66,36 +66,36 @@ echo -e ""$GN"["$RS"+"$GN"]"$CE" Installing dependencies..."$C""
 sleep 1
 
 {
-pkg update
-pkg -y install git
-pkg -y install python
-pkg -y install android-tools
-apt-get update
-apt-get -y install git
-apt-get -y install python3
-apt-get -y install adb
-apk update
-apk add git
-apk add python3
-apk add android-tools
-pacman -Sy
-pacman -S --noconfirm git
-pacman -S --noconfirm python3
-pacman -S --noconfirm android-tools
-zypper refresh
-zypper install -y git
-zypper install -y python3
+sudo pkg update
+sudo pkg -y install git
+sudo pkg -y install python
+sudo pkg -y install android-tools
+sudo apt-get update
+sudo apt-get -y install git
+sudo apt-get -y install python3
+sudo apt-get -y install adb
+sudo apk update
+sudo apk add git
+sudo apk add python3
+sudo apk add android-tools
+sudo pacman -Sy
+sudo pacman -S --noconfirm git
+sudo pacman -S --noconfirm python3
+sudo pacman -S --noconfirm android-tools
+sudo zypper refresh
+sudo zypper install -y git
+sudozypper install -y python3
 zypper install -y android-tools
-yum -y install git
-yum -y install python3
-yum -y install android-tools
-dnf -y install git
-dnf -y install python3
-dnf -y install android-tools
-eopkg update-repo
-eopkg -y install git
-eopkg -y install python3
-eopkg -y install android-tools
+sudo yum -y install git
+sudo yum -y install python3
+sudo yum -y install android-tools
+sudo dnf -y install git
+sudo dnf -y install python3
+sudo dnf -y install android-tools
+sudo eopkg update-repo
+sudo eopkg -y install git
+sudo eopkg -y install python3
+sudo eopkg -y install android-tools
 xbps-install -S
 xbps-install -y git
 xbps-install -y python3
